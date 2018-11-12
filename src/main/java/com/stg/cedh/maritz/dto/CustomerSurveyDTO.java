@@ -1,4 +1,4 @@
-package com.stg.cedh.maritz;
+package com.stg.cedh.maritz.dto;
 
 public class CustomerSurveyDTO {
 	

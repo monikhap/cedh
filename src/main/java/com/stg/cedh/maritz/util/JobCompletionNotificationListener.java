@@ -1,4 +1,4 @@
-package com.stg.cedh.maritz;
+package com.stg.cedh.maritz.util;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -14,6 +14,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.RowMapper;
 import org.springframework.stereotype.Component;
+
+import com.stg.cedh.maritz.dto.EmailCaptureDTO;
 
 @Component
 public class JobCompletionNotificationListener extends JobExecutionListenerSupport {

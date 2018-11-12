@@ -1,3 +1,5 @@
+DROP TABLE IF EXISTS email_Capture;
+
 CREATE TABLE email_Capture  (
    RecordKey		VARCHAR (15),
 EventType		VARCHAR(3),

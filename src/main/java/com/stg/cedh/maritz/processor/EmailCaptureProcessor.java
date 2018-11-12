@@ -1,8 +1,10 @@
-package com.stg.cedh.maritz;
+package com.stg.cedh.maritz.processor;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.batch.item.ItemProcessor;
+
+import com.stg.cedh.maritz.dto.EmailCaptureDTO;
 
 public class EmailCaptureProcessor implements ItemProcessor<EmailCaptureDTO, EmailCaptureDTO>{
 	

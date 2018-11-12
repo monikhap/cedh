@@ -1,4 +1,4 @@
-package com.stg.cedh.maritz;
+package com.stg.cedh.maritz.dto;
 
 public class EmailCaptureDTO {
 
@@ -234,6 +234,123 @@ public class EmailCaptureDTO {
 				+ ", ReasonNotSent=" + ReasonNotSent + ", ExclusionReason=" + ExclusionReason + ", HardBounce="
 				+ HardBounce + ", SoftBounce=" + SoftBounce + ", FingerPrint=" + FingerPrint + ", IP=" + IP
 				+ ", SurveyId=" + SurveyId + "]";
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		EmailCaptureDTO other = (EmailCaptureDTO) obj;
+		if (BodyModelCode == null) {
+			if (other.BodyModelCode != null)
+				return false;
+		} else if (!BodyModelCode.equals(other.BodyModelCode))
+			return false;
+		if (CID == null) {
+			if (other.CID != null)
+				return false;
+		} else if (!CID.equals(other.CID))
+			return false;
+		if (DealerCode == null) {
+			if (other.DealerCode != null)
+				return false;
+		} else if (!DealerCode.equals(other.DealerCode))
+			return false;
+		if (EmailAddress == null) {
+			if (other.EmailAddress != null)
+				return false;
+		} else if (!EmailAddress.equals(other.EmailAddress))
+			return false;
+		if (EventType == null) {
+			if (other.EventType != null)
+				return false;
+		} else if (!EventType.equals(other.EventType))
+			return false;
+		if (ExclusionReason == null) {
+			if (other.ExclusionReason != null)
+				return false;
+		} else if (!ExclusionReason.equals(other.ExclusionReason))
+			return false;
+		if (FingerPrint == null) {
+			if (other.FingerPrint != null)
+				return false;
+		} else if (!FingerPrint.equals(other.FingerPrint))
+			return false;
+		if (HardBounce == null) {
+			if (other.HardBounce != null)
+				return false;
+		} else if (!HardBounce.equals(other.HardBounce))
+			return false;
+		if (IP == null) {
+			if (other.IP != null)
+				return false;
+		} else if (!IP.equals(other.IP))
+			return false;
+		if (NotSent == null) {
+			if (other.NotSent != null)
+				return false;
+		} else if (!NotSent.equals(other.NotSent))
+			return false;
+		if (RONumber == null) {
+			if (other.RONumber != null)
+				return false;
+		} else if (!RONumber.equals(other.RONumber))
+			return false;
+		if (ReasonNotSent == null) {
+			if (other.ReasonNotSent != null)
+				return false;
+		} else if (!ReasonNotSent.equals(other.ReasonNotSent))
+			return false;
+		if (RecordKey == null) {
+			if (other.RecordKey != null)
+				return false;
+		} else if (!RecordKey.equals(other.RecordKey))
+			return false;
+		if (RecordState == null) {
+			if (other.RecordState != null)
+				return false;
+		} else if (!RecordState.equals(other.RecordState))
+			return false;
+		if (SalesConsultantSID == null) {
+			if (other.SalesConsultantSID != null)
+				return false;
+		} else if (!SalesConsultantSID.equals(other.SalesConsultantSID))
+			return false;
+		if (SampleReceivedDate == null) {
+			if (other.SampleReceivedDate != null)
+				return false;
+		} else if (!SampleReceivedDate.equals(other.SampleReceivedDate))
+			return false;
+		if (ServiceAdvisorSID == null) {
+			if (other.ServiceAdvisorSID != null)
+				return false;
+		} else if (!ServiceAdvisorSID.equals(other.ServiceAdvisorSID))
+			return false;
+		if (SoftBounce == null) {
+			if (other.SoftBounce != null)
+				return false;
+		} else if (!SoftBounce.equals(other.SoftBounce))
+			return false;
+		if (SurveyId == null) {
+			if (other.SurveyId != null)
+				return false;
+		} else if (!SurveyId.equals(other.SurveyId))
+			return false;
+		if (SurveyNumber == null) {
+			if (other.SurveyNumber != null)
+				return false;
+		} else if (!SurveyNumber.equals(other.SurveyNumber))
+			return false;
+		if (VIN == null) {
+			if (other.VIN != null)
+				return false;
+		} else if (!VIN.equals(other.VIN))
+			return false;
+		return true;
 	}
 
 }

@@ -1,4 +1,4 @@
-package com.stg.cedh.maritz;
+package com.stg.cedh.maritz.util;
 
 import javax.sql.DataSource;
 
@@ -19,6 +19,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.core.io.ClassPathResource;
+
+import com.stg.cedh.maritz.dto.EmailCaptureDTO;
+import com.stg.cedh.maritz.processor.EmailCaptureProcessor;
 
 @EnableBatchProcessing
 @Configuration
